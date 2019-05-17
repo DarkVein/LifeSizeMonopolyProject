@@ -1,0 +1,198 @@
+img {
+width: 100px;
+height: 100px;
+position: relative;
+-webkit-user-drag: none;
+-webkit-font-smoothing: antialiased;
+}
+
+.rr {
+position: relative;
+text-align: center;
+content: url('Images/brr.png');
+top: 30%;
+left: 25%;
+}
+
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+font-size: 18px;
+}
+
+button {
+padding: 5px;	
+border: 2px solid grey;
+background-color: #FFFF;
+background-color: #FFFF;
+}
+
+button:hover {
+cursor: pointer;
+background-color: lightgrey;
+}
+
+.right {
+padding: 25px;
+right: 8em;
+top: 8em;
+position: absolute;
+}
+
+
+.centered {
+position: absolute;
+top: 70px;
+left: 0px;
+}
+
+select {
+font-family: "Arial", Times, serif;
+font-size: 12px;
+font-variant: small-caps;	
+}
+
+select:hover {
+color: blue;
+cursor: pointer;
+}
+
+html,body {
+width: 100%;
+}
+
+.wrapper {
+background-color: #DAF7C6;
+width: 1191px;
+height: 1210px;
+border: 5px solid black;
+}
+
+.insidewrapper {
+position: absolute;
+margin-top: 105px;
+margin-left: 108px;
+width: 965px;
+height: 965px;
+background-image: url("Images/placeholder.jpeg");
+object-fit: cover;
+background-repeat: no-repeat;
+background-position: center;
+border: 2px solid grey;
+}
+
+.con {
+width: 100px;
+height: 100px;
+position: relative;
+border: 2px solid grey;
+display: block;
+word-break: break-word;
+font-family: "Arial", Times, serif;
+font-size: 12px;
+font-variant: small-caps;
+}
+
+.Spacer {
+width: 104px;
+height: 104px;
+position: relative;
+}
+
+.Brown {
+border-width: 7.5px;
+border-bottom: 25px solid brown;
+position: relative;
+width: 100px;
+height: 75px;
+}
+
+.Yellow {
+border-width: 7.5px;
+border-top: 25px solid Yellow;
+position: relative;
+
+width: 100px;
+height: 75px;
+}
+
+.Red {
+border-width: 7.5px;
+border-top: 25px solid Red;
+position: relative;
+
+width: 100px;
+height: 75px;
+}
+
+.LBlue {
+border-width: 7.5px;
+border-bottom: 25px solid #ABE9D9;
+position: relative;
+width: 100px;
+height: 75px;
+}
+
+.Blue {
+border-width: 7.5px;
+border-right: 25px solid blue;
+position: relative;
+width: 75px;
+height: 100px;
+}
+
+.Green {
+border-width: 7.5px;
+border-right: 25px solid Green;
+
+position: relative;
+width: 75px;
+height: 100px;
+}
+
+.Orange {
+border-width: 7.5px;
+border-left: 25px solid Orange;
+position: relative;
+width: 75px;
+height: 100px;
+}
+
+.Pink {
+border-width: 7.5px;
+border-left: 25px solid Pink;
+position: relative;
+width: 75px;
+height: 100px;
+}
+
+.Railroad {
+top: 12px;
+border-width: 7.5px;
+position: relative;
+width: 100px;
+height: 100px;
+}
+
+.con:hover {
+cursor: pointer;
+background-color: lightgrey;
+border-color: lightgrey;
+transform: scale(1.03);
+}
+
+.sideform {
+margin-top: 0px;
+margin-left: 0px;
+width: 400px;
+height: 500px;
+text-align: left;
+border: 5px solid lightgrey;
+background-color: #DAF7C6;
+position: relative;	
+}

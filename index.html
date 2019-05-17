@@ -1,0 +1,898 @@
+<html>
+<head>
+<title>Monopoly Project</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div class="wrapper">
+<div class="insidewrapper">
+
+<body>
+</div>
+<table>
+<th>
+<div class="con">
+<img src="Images/go.jpg"/>
+</div>
+</th>
+<th>
+<div class="con" id="c1">
+<div class="Brown" onmouseover="Display('Images/mediterranean.jpg')" >
+<br />
+Mediterranean Avenue
+<select oninput='Sel(1)' name='owned0' id='owned0'><option value='unowned'>Unowned</option></select>
+<p>
+$60
+</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" >
+<img src="Images/communitychest.jpg" onmouseover="Display('Images/communitychest.jpg')" onclick="drawCommunityCard()" />
+</div>
+</th>
+<th>
+<div class="con" id="c2">
+<div class="Brown" onmouseover="Display('Images/baltic.jpg')" >
+<br />
+Baltic Avenue
+<select oninput='Sel(2)' name='owned1' id='owned1'><option value='unowned'>Unowned</option></select>
+<br />
+<p>
+$60
+</p>
+</div>
+</div>
+</th>
+<th>
+<div class="con" >
+<p>
+INCOME
+<br />
+TAX
+<br />
+<br />
+PAY $200
+</p>
+</div>
+</th>
+
+<th>
+<div class="con" id="c3">
+<div class="Railroad"  onmouseover="Display('Images/readingrr.jpg')" >
+<div class="rr"></div>
+<br />
+<div class="centered1">
+Reading Railroad
+<select oninput='Sel(3)' name='owned2' id='owned2'><option value='unowned'>Unowned</option></select>
+<br />
+<p>
+$200
+</p>
+</div>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" id="c4">
+<div class="LBlue" onmouseover="Display('Images/oriental.jpg')" >
+<br />
+Oriental Avenue
+<br />
+<select oninput='Sel(4)' name='owned3' id='owned3'><option value='unowned'>Unowned</option></select>
+<p>
+$100
+</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" onmouseover="Display('Images/chance.jpg')" onclick="drawChanceCard()">
+<img src="Images/chance.jpg" />
+</div>
+</th>
+
+<th>
+<div class="con" id="c5">
+<div class="LBlue" onmouseover="Display('Images/vermont.jpg')" >
+<br />
+Vermont Avenue
+<select oninput='Sel(5)' name='owned4' id='owned4'><option value='unowned'>Unowned</option></select>
+<p>
+$100
+</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" id="c6">
+<div class="LBlue" onmouseover="Display('Images/connecticut.jpg')" >
+<br />
+Connecticut Avenue
+<select oninput='Sel(6)' name='owned5' id='owned5'><option value='unowned'>Unowned</option></select>
+<p>$180</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con">
+<img src="Images/jail.jpg"/>
+</div>
+</th>
+
+</table>
+<table>
+<th>
+<div class="con" id="c7">
+<div class="Blue" onmouseover="Display('Images/boardwalk.jpg')" >
+<br />
+Boardwalk
+<select oninput='Sel(7)' name='owned6' id='owned6'><option value='unowned'>Unowned</option></select>
+<br />
+<p>
+$400
+</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+
+<th>
+<div class="con" id="c8">
+<div class="pink" onmouseover="Display('Images/stcharles.jpg')" >
+<br />
+St. Charles Place
+<select oninput='Sel(8)' name='owned7' id='owned7'><option value='unowned'>Unowned</option></select>
+<p>
+$140
+</p>
+</div>
+</div>
+</th>
+</table>
+
+<table>
+<th>
+<div class="con">
+<img src="Images/luxurytax.jpg" onmouseover="Display('Images/luxurytax1.jpg')" >
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+
+<th>
+<div class="con" id="c9">
+
+<img src="Images/electricboard.jpg" onmouseover="Display('Images/electriccompany.jpg')" >
+<div class="centered">
+<select oninput='Sel(9)' name='owned8' id='owned8'><option value='unowned'>Unowned</option></select>
+</div>
+</div>
+</th>
+</table>
+
+<table>
+<th>
+<div class="con" id="c10">
+<div class="Blue" onmouseover="Display('Images/parkplace.jpg')">
+Park Place
+<p>$350</p>
+<select oninput='Sel(10)' name='owned9' id='owned9'><option value='unowned'>Unowned</option></select>
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+
+<th>
+<div class="con" id="c11">
+<div class="Pink" onmouseover="Display('Images/states.jpg')" >
+<br />
+States Avenue
+<select oninput='Sel(11)' name='owned10' id='owned10'><option value='unowned'>Unowned</option></select>
+<p>$140</p>
+</div>
+</div>
+</th>
+</table>
+<table>
+<th>
+<div class="con">
+<img src="Images/chance2.jpg" onmouseover="Display('Images/chance.jpg')" onclick="drawChanceCard()">
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+
+<th>
+<div class="con" id="c12">
+<div class="Pink" onmouseover="Display('Images/virginia.jpg')" >
+<br />
+Virginia Avenue
+<select oninput='Sel(12)' name='owned11' id='owned11'><option value='unowned'>Unowned</option></select>
+<p>$160</p>
+</div>
+</div>
+</th>
+</table>
+<table>
+<th>
+<div class="con" id="c13">
+<div class="Railroad" onmouseover="Display('Images/shortline.jpg')">
+<div class="rr"></div>
+<br />
+<div class="centered1">
+Short Line
+<select oninput='Sel(13)' name='owned12' id='owned12'><option value='unowned'>Unowned</option></select>
+<br />
+<br />
+<br />
+<p>$200</p>
+</div>
+</div>
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="con" id="c14">
+<div class="Railroad" onmouseover="Display('Images/prr.jpg')" >
+<div class="rr"></div>
+<br />
+<div class="centered1">
+Pennsylvannia Railroad
+<select oninput='Sel(14)' name='owned13' id='owned13'><option value='unowned'>Unowned</option></select>
+<br />
+<br />
+<br />
+<p>$200</p>
+</div>
+</div>
+</div>
+</th>
+</table>
+
+<table>
+<th>
+<div class="con" id="c15">
+<div class="Green">
+<br />
+Pennsylvania Avenue
+<select oninput='Sel(15)' name='owned14' id='owned14'><option value='unowned'>Unowned</option></select>
+<p>$320</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+
+<th>
+<div class="con" id="c16">
+<div class="Orange" onmouseover="Display('Images/stjames.jpg')" >
+<br />
+St. James Place
+<select oninput='Sel(16)' name='owned15' id='owned15'><option value='unowned'>Unowned</option></select>
+<p>$180</p>
+</div>
+</div>
+</th>
+</table>
+<table>
+<th>
+<div class="con">
+<img src="Images/communitychest.jpg" onmouseover="Display('Images/communitychest.jpg')" onclick="drawCommunityCard()" />
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+
+<th>
+<div class="con">
+<img src="Images/communitychest.jpg" onmouseover="Display('Images/communitychest.jpg')" onclick="drawCommunityCard()" />
+</div>
+</th>
+</table>
+
+<table>
+<th>
+<div class="con" id="c17">
+<div class="Green" onmouseover="Display('Images/northcarolina.jpg')" >
+North Carolina Avenue
+<select oninput='Sel(17)' name='owned16' id='owned16'><option value='unowned'>Unowned</option></select>
+<p>$300</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+
+<th>
+<div class="con" id="c18">
+<div class="Orange" onmouseover="Display('Images/tennessee.jpg')" >
+<br />
+Tennessee Avenue
+<select oninput='Sel(18)' name='owned17' id='owned17'><option value='unowned'>Unowned</option></select>
+<p>$180</p>
+</div>
+</div>
+</th>
+</table>
+
+<table>
+<th>
+<div class="con" id="c19">
+<div class="Green" onmouseover="Display('Images/pacific.jpg')" >
+<br />
+Pacific Avenue
+<select oninput='Sel(19)' name='owned18' id='owned18'><option value='unowned'>Unowned</option></select>
+<p>$300</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="Spacer">
+</div>
+</th>
+<th>
+<div class="con" id="c20">
+<div class="Orange" onmouseover="Display('Images/newyork.jpg')" >
+<br />
+New York Avenue
+<select oninput='Sel(20)' name='owned19' id='owned19'><option value='unowned'>Unowned</option></select>
+<p>$200</p>
+</div>
+</div>
+</th>
+</table>
+<table>
+<th>
+<div class="con">
+<img src="Images/gotojail.jpg">
+</div>
+</th>
+<th>
+<div class="con" id="c21">
+<div class="Yellow" onmouseover="Display('Images/marvingardens.jpg')" >
+Marvin Gardens
+<select oninput='Sel(21)' name='owned20' id='owned20'><option value='unowned'>Unowned</option></select>
+<p>$280</p>
+</div>
+</div>
+</th>
+<th>
+<div class="con" id='c22'>
+<img src="Images/waterworksboard.jpg" onmouseover="Display('Images/waterworks.jpg')" >
+<div class="centered">
+<select oninput='Sel(22)' name='owned21' id='owned21'><option value='unowned'>Unowned</option></select>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" id="c23">
+<div class="Yellow" onmouseover="Display('Images/ventnor.jpg')" >
+Ventnor Avenue
+<select oninput='Sel(23)' name='owned22' id='owned22'><option value='unowned'>Unowned</option></select>
+<p>$260</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" id="c24">
+<div class="Yellow" onmouseover="Display('Images/atlantic.jpg')" >
+Atlantic Avenue
+<select oninput='Sel(24)' name='owned23' id='owned23'><option value='unowned'>Unowned</option></select>
+<p>$260</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" id="c25">
+<div class="railroad" onmouseover="Display('Images/b&o.jpg')" >
+<div class="rr"></div>
+<br />
+<div class="centered1">
+B&O Railroad
+<select oninput='Sel(25)' name='owned24' id='owned24'><option value='unowned'>Unowned</option></select>
+<br />
+<br />
+<br />
+<p>$200</p>
+</div>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" id="c26">
+<div class="Red" onmouseover="Display('Images/illinois.jpg')" >
+Illinois Avenue
+<select oninput='Sel(26)' name='owned25' id='owned25'><option value='unowned'>Unowned</option></select>
+<p>$240</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con" id="c27">
+<div class="Red" onmouseover="Display('Images/indiana.jpg')" >
+Indiana Avenue
+<select oninput='Sel(27)' name='owned26' id='owned26'><option value='unowned'>Unowned</option></select>
+<p>$220</p>
+</div>
+</div>
+</th>
+
+<th>
+<div class="con">
+<img src="Images/chance.jpg" onmouseover="Display('Images/chance.jpg')" onclick="drawChanceCard()"/>
+</div>
+</th>
+
+<th>
+<div class="con" id="c28">
+<div class="Red" onmouseover="Display('Images/kentucky.jpg')" >
+Kentucky
+<select oninput='Sel(28)' name='owned27' id='owned27'><option value='unowned'>Unowned</option></select>
+<p>$220</p>
+</div>
+</div>
+</th>
+<th>
+<div class="con">
+<img src="Images/freeparking.jpg" onmouseover="Display('Images/freeparkingcard.jpg')"  />
+</div>
+</th>
+</table>
+</div>
+</div>
+</body>
+<div class="right">
+<div class="sideform">
+<br />
+<br />
+<Label for="number">Number of Players </label><input id="numplayers" type="number"></input>
+<button onclick="RPlayers()">Register the Players</button>
+<span id="form">
+<br />
+<br />
+<br />
+</span>
+
+<span id="displayplayers">
+</span>
+</span>
+<br />
+<button onclick='Up()'>Update Player List</button>
+</div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var e = document.getElementsByTagName("DIV")[1];
+
+function Display(x) {
+var topath="url('"+x+"')";
+e.style.backgroundImage=topath;
+}
+
+function click(x) {
+var bg = e.style.background;
+if(bg == "url('Images/placeholder.jpeg')") {
+} else {
+
+}
+}
+</script>
+<script>
+var players = document.getElementById("form");
+var numplayers = document.getElementById("numplayers");
+var displayplayers = document.getElementById("displayplayers");
+//var a = document.getElementsByTagName("owned")[];
+//var dbutton = document.getElementById("displaybutton");
+//dbutton.innerHTML="<button oninput='UpdatePlayers()'>Update Player List</button>";
+
+
+function RPlayers() {
+if(numplayers.value<4) {
+players.innerHTML='<br /><p>Need more players.</p>';
+} else if(numplayers.value>8){
+players.innerHTML='<br /><p>You have too many players.</p>';
+} else {
+var s ='<br />Player #0<input type="text" id="0"></input>';
+for(var i=1;i<numplayers.value;i++) {
+s=s+'<br />Player #'+i+'<input type="text" id='+i+'></input>';
+}
+players.innerHTML=s;
+}
+}
+
+function framework(t,l) {
+for(var i=0;i<28;i++) {
+$('#owned'+i).append($('<option>', {
+    value: l,
+    text: t
+}));
+}
+}
+
+function Up() {
+var dp = "";
+var str = "";
+for(var l=0;l<=numplayers.value;l++) {
+if(document.getElementById===null) {
+} else {
+dp = dp +"<br/>Player #"+l +" is "+document.getElementById(l+"").value;
+str='<option value="'+document.getElementById(l+"").value+'">'+document.getElementById(l+"").value+"</option>";
+framework(document.getElementById(l+"").value,l); 
+}
+displayplayers.innerHTML=dp;
+}
+}
+
+var e1 = document.getElementsByTagName("DIV")[1];
+function drawChanceCard() {
+var cardDrawn = Math.floor((Math.random() * 16) + 1);
+if(cardDrawn===17) cardDrawn=16;
+e1.style.backgroundImage="url('Images/chance/chancecard"+cardDrawn+".jpg')";
+}
+
+function drawCommunityCard() {
+var cardDrawn = Math.floor((Math.random() * 16) + 1);
+if(cardDrawn===17) cardDrawn=16;
+e1.style.backgroundImage="url('Images/chest/communitychest"+cardDrawn+".jpg')";
+}
+</script>
+<script>
+function Sel(x) {
+var own = x-1;
+var sel = document.getElementById("owned"+own);
+var s = document.getElementById("c"+x);
+var color = getColor(sel.value);
+s.style.backgroundColor=color;
+}
+
+function getColor(x) {
+switch(x) {
+case "unowned":
+return "lightgrey";
+case '0':
+return "lightblue";
+case '1':
+return "orangered";
+case '2':
+return "purple";
+case '3':
+return "green";
+case '4':
+return "orange";
+case '5':
+return "yellow";
+case '6':
+return "maroon";
+case '7':
+return "lime";
+}
+}
+</script>
+</html>
